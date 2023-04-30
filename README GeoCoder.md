@@ -9,8 +9,7 @@
 - Создать базу данных в одной из РСУБД.
 - Указать название БД в application properties.
 - Запустить приложение.
-- Скачать коллекцию PostMan по ссылке:
- (https://api.postman.com/collections/25575342-273921b7-0684-4fa9-9b20-2a52dc95959f?access_key=PMAT-01GZ8M8G006R7BQP1J1CK6QH72).
+- Скачать коллекцию PostMan.
 
  
 
