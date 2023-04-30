@@ -1,0 +1,248 @@
+2023-04-30 05:00:18.686  INFO 8364 --- [main] c.example.geocoder.GeocoderApplication   : Starting GeocoderApplication using Java 17.0.4.1 on DESKTOP-D58JHSD with PID 8364 (C:\Users\USER\Desktop\html\geocoder\target\classes started by USER in C:\Users\USER\Desktop\html\geocoder)
+2023-04-30 05:00:18.689  INFO 8364 --- [main] c.example.geocoder.GeocoderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-04-30 05:00:19.523  INFO 8364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-30 05:00:19.617  INFO 8364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interfaces.
+2023-04-30 05:00:20.303  INFO 8364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8092 (http)
+2023-04-30 05:00:20.314  INFO 8364 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-30 05:00:20.314  INFO 8364 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-04-30 05:00:20.449  INFO 8364 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-30 05:00:20.450  INFO 8364 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1698 ms
+2023-04-30 05:00:20.694  INFO 8364 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-30 05:00:20.763  INFO 8364 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-30 05:00:20.977  INFO 8364 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-30 05:00:21.114  INFO 8364 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-30 05:00:21.368  INFO 8364 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-30 05:00:21.418  INFO 8364 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-30 05:00:22.233  WARN 8364 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-04-30 05:00:22.234  WARN 8364 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "address" does not exist, skipping
+2023-04-30 05:00:22.235  WARN 8364 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-04-30 05:00:22.235  WARN 8364 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "hibernate_sequence" does not exist, skipping
+2023-04-30 05:00:22.286  INFO 8364 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-30 05:00:22.306  INFO 8364 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-30 05:00:22.790  WARN 8364 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-30 05:00:23.182  INFO 8364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8092 (http) with context path ''
+2023-04-30 05:00:23.197  INFO 8364 --- [main] c.example.geocoder.GeocoderApplication   : Started GeocoderApplication in 5.15 seconds (JVM running for 6.608)
+2023-04-30 05:00:27.981  INFO 8364 --- [http-nio-8092-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-30 05:00:27.982  INFO 8364 --- [http-nio-8092-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-30 05:00:27.983  INFO 8364 --- [http-nio-8092-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-30 05:00:28.047  INFO 8364 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : getCoordinates: начало поиска координат по адресу.
+2023-04-30 05:01:03.097  INFO 8364 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : Получен JSON ответ с сервера и преобразован в строку.
+2023-04-30 05:01:09.971  INFO 8364 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : Завершение метода по поиску адреса.
+2023-04-30 05:01:20.343  INFO 8364 --- [http-nio-8092-exec-5] c.e.g.service.impl.AddressServiceImpl    : getCoordinates: начало поиска координат по адресу.
+2023-04-30 05:02:02.172  INFO 8364 --- [http-nio-8092-exec-5] c.e.g.service.impl.AddressServiceImpl    : Адрес найден в базе данных и будет отправлен как результат.
+2023-04-30 05:02:14.610  INFO 8364 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-30 05:02:14.612  INFO 8364 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-30 05:02:14.620  INFO 8364 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-30 05:03:06.739  INFO 1592 --- [main] c.example.geocoder.GeocoderApplication   : Starting GeocoderApplication using Java 17.0.4.1 on DESKTOP-D58JHSD with PID 1592 (C:\Users\USER\Desktop\html\geocoder\target\classes started by USER in C:\Users\USER\Desktop\html\geocoder)
+2023-04-30 05:03:06.743  INFO 1592 --- [main] c.example.geocoder.GeocoderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-04-30 05:03:07.535  INFO 1592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-30 05:03:07.612  INFO 1592 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interfaces.
+2023-04-30 05:03:08.230  INFO 1592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8092 (http)
+2023-04-30 05:03:08.240  INFO 1592 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-30 05:03:08.240  INFO 1592 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-04-30 05:03:08.569  INFO 1592 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-30 05:03:08.570  INFO 1592 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1762 ms
+2023-04-30 05:03:08.872  INFO 1592 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-30 05:03:08.961  INFO 1592 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-30 05:03:09.227  INFO 1592 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-30 05:03:09.365  INFO 1592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-30 05:03:09.621  INFO 1592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-30 05:03:09.670  INFO 1592 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-30 05:03:10.433  INFO 1592 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-30 05:03:10.447  INFO 1592 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-30 05:03:10.898  WARN 1592 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-30 05:03:11.342  INFO 1592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8092 (http) with context path ''
+2023-04-30 05:03:11.356  INFO 1592 --- [main] c.example.geocoder.GeocoderApplication   : Started GeocoderApplication in 5.202 seconds (JVM running for 6.575)
+2023-04-30 05:03:15.106  INFO 1592 --- [http-nio-8092-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-30 05:03:15.106  INFO 1592 --- [http-nio-8092-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-30 05:03:15.107  INFO 1592 --- [http-nio-8092-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-30 05:03:15.173  INFO 1592 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : getCoordinates: начало поиска координат по адресу.
+2023-04-30 05:03:50.663  INFO 1592 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : Получен JSON ответ с сервера и преобразован в строку.
+2023-04-30 05:03:51.065  INFO 1592 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : Завершение метода по поиску адреса.
+2023-04-30 05:04:02.940  INFO 1592 --- [http-nio-8092-exec-4] c.e.g.service.impl.AddressServiceImpl    : getCoordinates: начало поиска координат по адресу.
+2023-04-30 05:04:24.541  INFO 1592 --- [http-nio-8092-exec-4] c.e.g.service.impl.AddressServiceImpl    : Адрес найден в базе данных и будет отправлен как результат.
+2023-04-30 05:04:34.323  INFO 1592 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-30 05:04:34.325  INFO 1592 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-30 05:04:34.331  INFO 1592 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-30 05:07:36.473  INFO 8024 --- [main] c.example.geocoder.GeocoderApplication   : Starting GeocoderApplication using Java 17.0.4.1 on DESKTOP-D58JHSD with PID 8024 (C:\Users\USER\Desktop\html\geocoder\target\classes started by USER in C:\Users\USER\Desktop\html\geocoder)
+2023-04-30 05:07:36.478  INFO 8024 --- [main] c.example.geocoder.GeocoderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-04-30 05:07:37.468  INFO 8024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-30 05:07:37.554  INFO 8024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 1 JPA repository interfaces.
+2023-04-30 05:07:38.380  INFO 8024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8092 (http)
+2023-04-30 05:07:38.395  INFO 8024 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-30 05:07:38.396  INFO 8024 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-04-30 05:07:38.524  INFO 8024 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-30 05:07:38.524  INFO 8024 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1971 ms
+2023-04-30 05:07:38.794  INFO 8024 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-30 05:07:38.881  INFO 8024 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-30 05:07:39.137  INFO 8024 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-30 05:07:39.283  INFO 8024 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-30 05:07:39.554  INFO 8024 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-30 05:07:39.599  INFO 8024 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-30 05:07:40.451  INFO 8024 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-30 05:07:40.469  INFO 8024 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-30 05:07:40.979  WARN 8024 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-30 05:07:41.923  INFO 8024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8092 (http) with context path ''
+2023-04-30 05:07:41.953  INFO 8024 --- [main] c.example.geocoder.GeocoderApplication   : Started GeocoderApplication in 6.141 seconds (JVM running for 7.365)
+2023-04-30 05:07:53.657  INFO 8024 --- [http-nio-8092-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-30 05:07:53.660  INFO 8024 --- [http-nio-8092-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-30 05:07:53.673  INFO 8024 --- [http-nio-8092-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2023-04-30 05:07:53.763  INFO 8024 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : getAddress: Начало работы метода поиска адреса по координатам.
+2023-04-30 05:07:54.148  INFO 8024 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : Поиск введенных координат в репозитории.
+2023-04-30 05:08:06.990  INFO 8024 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : Был произведен запрос по Апи и получен ответ ввиде JSON и преобразован в String.
+2023-04-30 05:08:07.061  INFO 8024 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : Полученный ответ был преобразован в структуру дерева JSON.
+2023-04-30 05:08:07.062  INFO 8024 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : Начало парсинга JSON дерева, и выборка нужного блока.
+2023-04-30 05:08:07.627  INFO 8024 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : Маппинг выбранного блока в обьект Java.
+2023-04-30 05:08:16.652  INFO 8024 --- [http-nio-8092-exec-3] c.e.g.service.impl.AddressServiceImpl    : getAddress: Начало работы метода поиска адреса по координатам.
+2023-04-30 05:08:16.672  INFO 8024 --- [http-nio-8092-exec-3] c.e.g.service.impl.AddressServiceImpl    : Поиск введенных координат в репозитории.
+2023-04-30 05:08:29.317  INFO 8024 --- [http-nio-8092-exec-3] c.e.g.service.impl.AddressServiceImpl    : Координаты найдены и соответсвуют запросу, данные будут отправленны из репозитория.
+2023-04-30 05:08:51.439  INFO 8024 --- [http-nio-8092-exec-6] c.e.g.service.impl.AddressServiceImpl    : getAddress: Начало работы метода поиска адреса по координатам.
+2023-04-30 05:08:51.443  INFO 8024 --- [http-nio-8092-exec-6] c.e.g.service.impl.AddressServiceImpl    : Поиск введенных координат в репозитории.
+2023-04-30 05:08:56.063  INFO 8024 --- [http-nio-8092-exec-6] c.e.g.service.impl.AddressServiceImpl    : Координаты найдены и соответсвуют запросу, данные будут отправленны из репозитория.
+2023-04-30 05:09:01.351  INFO 8024 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-30 05:09:01.354  INFO 8024 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-30 05:09:01.360  INFO 8024 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-30 05:09:42.562  INFO 716 --- [main] c.example.geocoder.GeocoderApplication   : Starting GeocoderApplication using Java 17.0.4.1 on DESKTOP-D58JHSD with PID 716 (C:\Users\USER\Desktop\html\geocoder\target\classes started by USER in C:\Users\USER\Desktop\html\geocoder)
+2023-04-30 05:09:42.565  INFO 716 --- [main] c.example.geocoder.GeocoderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-04-30 05:09:43.385  INFO 716 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-30 05:09:43.500  INFO 716 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102 ms. Found 1 JPA repository interfaces.
+2023-04-30 05:09:44.173  INFO 716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8092 (http)
+2023-04-30 05:09:44.188  INFO 716 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-30 05:09:44.189  INFO 716 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-04-30 05:09:44.313  INFO 716 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-30 05:09:44.313  INFO 716 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1684 ms
+2023-04-30 05:09:44.571  INFO 716 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-30 05:09:44.645  INFO 716 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-30 05:09:44.868  INFO 716 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-30 05:09:45.028  INFO 716 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-30 05:09:45.265  INFO 716 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-30 05:09:45.302  INFO 716 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-30 05:09:46.288  INFO 716 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-30 05:09:46.308  INFO 716 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-30 05:09:47.019  WARN 716 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-30 05:09:47.566  INFO 716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8092 (http) with context path ''
+2023-04-30 05:09:47.590  INFO 716 --- [main] c.example.geocoder.GeocoderApplication   : Started GeocoderApplication in 5.616 seconds (JVM running for 6.834)
+2023-04-30 05:09:51.728  INFO 716 --- [http-nio-8092-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-30 05:09:51.729  INFO 716 --- [http-nio-8092-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-30 05:09:51.732  INFO 716 --- [http-nio-8092-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-04-30 05:09:51.843  INFO 716 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : getAddress: Начало работы метода поиска адреса по координатам.
+2023-04-30 05:09:52.313  INFO 716 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : Поиск введенных координат в репозитории.
+2023-04-30 05:10:07.567  INFO 716 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : Был произведен запрос по Апи и получен ответ ввиде JSON и преобразован в String.
+2023-04-30 05:10:07.623  INFO 716 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : Полученный ответ был преобразован в структуру дерева JSON.
+2023-04-30 05:10:07.624  INFO 716 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : Начало парсинга JSON дерева, и выборка нужного блока.
+2023-04-30 05:10:07.922  INFO 716 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : Маппинг выбранного блока в обьект Java.
+2023-04-30 05:10:10.766  INFO 716 --- [http-nio-8092-exec-3] c.e.g.service.impl.AddressServiceImpl    : getAddress: Начало работы метода поиска адреса по координатам.
+2023-04-30 05:10:10.769  INFO 716 --- [http-nio-8092-exec-3] c.e.g.service.impl.AddressServiceImpl    : Поиск введенных координат в репозитории.
+2023-04-30 05:10:19.430  INFO 716 --- [http-nio-8092-exec-3] c.e.g.service.impl.AddressServiceImpl    : Координаты найдены и соответсвуют запросу, данные будут отправленны из репозитория.
+2023-04-30 05:10:26.110  INFO 716 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-30 05:10:26.112  INFO 716 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-30 05:10:26.130  INFO 716 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-30 05:11:05.629  INFO 7212 --- [main] c.example.geocoder.GeocoderApplication   : Starting GeocoderApplication using Java 17.0.4.1 on DESKTOP-D58JHSD with PID 7212 (C:\Users\USER\Desktop\html\geocoder\target\classes started by USER in C:\Users\USER\Desktop\html\geocoder)
+2023-04-30 05:11:05.633  INFO 7212 --- [main] c.example.geocoder.GeocoderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-04-30 05:11:06.322  INFO 7212 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-30 05:11:06.369  INFO 7212 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2023-04-30 05:11:06.900  INFO 7212 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8092 (http)
+2023-04-30 05:11:06.909  INFO 7212 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-30 05:11:06.909  INFO 7212 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-04-30 05:11:07.013  INFO 7212 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-30 05:11:07.014  INFO 7212 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1330 ms
+2023-04-30 05:11:07.197  INFO 7212 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-30 05:11:07.328  INFO 7212 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-30 05:11:07.514  INFO 7212 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-30 05:11:07.612  INFO 7212 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-30 05:11:07.796  INFO 7212 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-30 05:11:07.850  INFO 7212 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-30 05:11:08.673  INFO 7212 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-30 05:11:08.686  INFO 7212 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-30 05:11:09.083  WARN 7212 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-30 05:11:09.477  INFO 7212 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8092 (http) with context path ''
+2023-04-30 05:11:09.495  INFO 7212 --- [main] c.example.geocoder.GeocoderApplication   : Started GeocoderApplication in 4.378 seconds (JVM running for 5.084)
+2023-04-30 05:11:20.774  INFO 7212 --- [http-nio-8092-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-30 05:11:20.774  INFO 7212 --- [http-nio-8092-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-30 05:11:20.776  INFO 7212 --- [http-nio-8092-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-30 05:11:20.845  INFO 7212 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : getCoordinates: начало поиска координат по адресу.
+2023-04-30 05:11:22.068  INFO 7212 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : Получен JSON ответ с сервера и преобразован в строку.
+2023-04-30 05:11:22.191  INFO 7212 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : Завершение метода по поиску адреса.
+2023-04-30 05:11:33.941  INFO 7212 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-30 05:11:33.942  INFO 7212 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-30 05:11:33.948  INFO 7212 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-30 05:45:41.773  INFO 13796 --- [main] c.example.geocoder.GeocoderApplication   : Starting GeocoderApplication using Java 17.0.4.1 on DESKTOP-D58JHSD with PID 13796 (C:\Users\USER\Desktop\html\geocoder\target\classes started by USER in C:\Users\USER\Desktop\html\geocoder)
+2023-04-30 05:45:41.777  INFO 13796 --- [main] c.example.geocoder.GeocoderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-04-30 05:45:42.565  INFO 13796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-30 05:45:42.621  INFO 13796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2023-04-30 05:45:43.200  INFO 13796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8092 (http)
+2023-04-30 05:45:43.209  INFO 13796 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-30 05:45:43.209  INFO 13796 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-04-30 05:45:43.329  INFO 13796 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-30 05:45:43.329  INFO 13796 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1490 ms
+2023-04-30 05:45:43.566  INFO 13796 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-30 05:45:43.639  INFO 13796 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-30 05:45:43.810  INFO 13796 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-30 05:45:43.932  INFO 13796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-30 05:45:44.132  INFO 13796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-30 05:45:44.175  INFO 13796 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-30 05:45:44.963  INFO 13796 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-30 05:45:44.978  INFO 13796 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-30 05:45:45.318  WARN 13796 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-30 05:45:45.709  INFO 13796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8092 (http) with context path ''
+2023-04-30 05:45:45.720  INFO 13796 --- [main] c.example.geocoder.GeocoderApplication   : Started GeocoderApplication in 4.473 seconds (JVM running for 5.468)
+2023-04-30 05:45:57.181  INFO 13796 --- [http-nio-8092-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-30 05:45:57.181  INFO 13796 --- [http-nio-8092-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-30 05:45:57.184  INFO 13796 --- [http-nio-8092-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-04-30 05:45:57.229  INFO 13796 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : getCoordinates: начало поиска координат по адресу.
+2023-04-30 05:45:58.274  INFO 13796 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : Получен JSON ответ с сервера и преобразован в строку.
+2023-04-30 05:45:58.411  INFO 13796 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : Завершение метода по поиску адреса.
+2023-04-30 05:46:19.221  INFO 13796 --- [http-nio-8092-exec-3] c.e.g.service.impl.AddressServiceImpl    : getCoordinates: начало поиска координат по адресу.
+2023-04-30 05:46:19.224  INFO 13796 --- [http-nio-8092-exec-3] c.e.g.service.impl.AddressServiceImpl    : Адрес найден в базе данных и будет отправлен как результат.
+2023-04-30 05:46:41.791  INFO 13796 --- [http-nio-8092-exec-4] c.e.g.service.impl.AddressServiceImpl    : getAddress: Начало работы метода поиска адреса по координатам.
+2023-04-30 05:46:41.806  INFO 13796 --- [http-nio-8092-exec-4] c.e.g.service.impl.AddressServiceImpl    : Поиск введенных координат в репозитории.
+2023-04-30 05:46:42.031  INFO 13796 --- [http-nio-8092-exec-4] c.e.g.service.impl.AddressServiceImpl    : Был произведен запрос по Апи и получен ответ ввиде JSON и преобразован в String.
+2023-04-30 05:46:42.034  INFO 13796 --- [http-nio-8092-exec-4] c.e.g.service.impl.AddressServiceImpl    : Полученный ответ был преобразован в структуру дерева JSON.
+2023-04-30 05:46:42.035  INFO 13796 --- [http-nio-8092-exec-4] c.e.g.service.impl.AddressServiceImpl    : Начало парсинга JSON дерева, и выборка нужного блока.
+2023-04-30 05:46:42.048  INFO 13796 --- [http-nio-8092-exec-4] c.e.g.service.impl.AddressServiceImpl    : Маппинг выбранного блока в обьект Java.
+2023-04-30 05:46:55.485  INFO 13796 --- [http-nio-8092-exec-5] c.e.g.service.impl.AddressServiceImpl    : getAddress: Начало работы метода поиска адреса по координатам.
+2023-04-30 05:46:55.491  INFO 13796 --- [http-nio-8092-exec-5] c.e.g.service.impl.AddressServiceImpl    : Поиск введенных координат в репозитории.
+2023-04-30 05:46:55.492  INFO 13796 --- [http-nio-8092-exec-5] c.e.g.service.impl.AddressServiceImpl    : Координаты найдены и соответсвуют запросу, данные будут отправленны из репозитория.
+2023-04-30 05:47:04.777  INFO 13796 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-30 05:47:04.779  INFO 13796 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-30 05:47:04.786  INFO 13796 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-30 14:24:00.573  INFO 2736 --- [main] c.example.geocoder.GeocoderApplication   : Starting GeocoderApplication using Java 17.0.4.1 on DESKTOP-D58JHSD with PID 2736 (C:\Users\USER\Desktop\html\geocoder\target\classes started by USER in C:\Users\USER\Desktop\html\geocoder)
+2023-04-30 14:24:00.576  INFO 2736 --- [main] c.example.geocoder.GeocoderApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-04-30 14:24:01.081  INFO 2736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-30 14:24:01.126  INFO 2736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+2023-04-30 14:24:01.558  INFO 2736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8092 (http)
+2023-04-30 14:24:01.566  INFO 2736 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-30 14:24:01.567  INFO 2736 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-04-30 14:24:01.651  INFO 2736 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-30 14:24:01.652  INFO 2736 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1039 ms
+2023-04-30 14:24:01.820  INFO 2736 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-30 14:24:01.873  INFO 2736 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-30 14:24:01.996  INFO 2736 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-30 14:24:02.094  INFO 2736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-30 14:24:02.273  INFO 2736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-30 14:24:02.310  INFO 2736 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-04-30 14:24:02.883  INFO 2736 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-30 14:24:02.893  INFO 2736 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-30 14:24:03.163  WARN 2736 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-30 14:24:03.431  INFO 2736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8092 (http) with context path ''
+2023-04-30 14:24:03.440  INFO 2736 --- [main] c.example.geocoder.GeocoderApplication   : Started GeocoderApplication in 3.248 seconds (JVM running for 3.861)
+2023-04-30 14:24:26.271  INFO 2736 --- [http-nio-8092-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-30 14:24:26.273  INFO 2736 --- [http-nio-8092-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-30 14:24:26.275  INFO 2736 --- [http-nio-8092-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-30 14:24:26.304  INFO 2736 --- [http-nio-8092-exec-3] c.e.g.service.impl.AddressServiceImpl    : getCoordinates: начало поиска координат по адресу.
+2023-04-30 14:24:27.093  INFO 2736 --- [http-nio-8092-exec-3] c.e.g.service.impl.AddressServiceImpl    : Получен JSON ответ с сервера и преобразован в строку.
+2023-04-30 14:24:27.145  INFO 2736 --- [http-nio-8092-exec-3] c.e.g.service.impl.AddressServiceImpl    : Завершение метода по поиску адреса.
+2023-04-30 14:24:44.431  INFO 2736 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : getCoordinates: начало поиска координат по адресу.
+2023-04-30 14:24:44.441  INFO 2736 --- [http-nio-8092-exec-2] c.e.g.service.impl.AddressServiceImpl    : Адрес найден в базе данных и будет отправлен как результат.
+2023-04-30 14:24:54.143  INFO 2736 --- [http-nio-8092-exec-4] c.e.g.service.impl.AddressServiceImpl    : getAddress: Начало работы метода поиска адреса по координатам.
+2023-04-30 14:24:54.153  INFO 2736 --- [http-nio-8092-exec-4] c.e.g.service.impl.AddressServiceImpl    : Поиск введенных координат в репозитории.
+2023-04-30 14:24:54.368  INFO 2736 --- [http-nio-8092-exec-4] c.e.g.service.impl.AddressServiceImpl    : Был произведен запрос по Апи и получен ответ ввиде JSON и преобразован в String.
+2023-04-30 14:24:54.369  INFO 2736 --- [http-nio-8092-exec-4] c.e.g.service.impl.AddressServiceImpl    : Полученный ответ был преобразован в структуру дерева JSON.
+2023-04-30 14:24:54.370  INFO 2736 --- [http-nio-8092-exec-4] c.e.g.service.impl.AddressServiceImpl    : Начало парсинга JSON дерева, и выборка нужного блока.
+2023-04-30 14:24:54.377  INFO 2736 --- [http-nio-8092-exec-4] c.e.g.service.impl.AddressServiceImpl    : Маппинг выбранного блока в обьект Java.
+2023-04-30 14:25:00.634  INFO 2736 --- [http-nio-8092-exec-5] c.e.g.service.impl.AddressServiceImpl    : getAddress: Начало работы метода поиска адреса по координатам.
+2023-04-30 14:25:00.637  INFO 2736 --- [http-nio-8092-exec-5] c.e.g.service.impl.AddressServiceImpl    : Поиск введенных координат в репозитории.
+2023-04-30 14:25:00.637  INFO 2736 --- [http-nio-8092-exec-5] c.e.g.service.impl.AddressServiceImpl    : Координаты найдены и соответсвуют запросу, данные будут отправленны из репозитория.
+2023-04-30 14:25:08.425  INFO 2736 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-30 14:25:08.427  INFO 2736 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-30 14:25:08.434  INFO 2736 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
